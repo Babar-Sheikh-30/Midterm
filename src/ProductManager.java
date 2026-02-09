@@ -10,4 +10,10 @@ public class ProductManager {
     public void displayProduct() {
         System.out.println("Product: " + productName + ", Price: $" + price);
     }
+    
+    // Calculates the discount amount based on the given discount percentage
+    public double calculateDiscount(double discountPercent) {
+        return price * (discountPercent / 100);
+    }
+   
 }
